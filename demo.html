@@ -7,17 +7,25 @@
 <script src="zRadio.js"></script>
 </head>
 <body>
-<h1>Set 1</h1>
-<input type="radio" name="set 1" title="option 1">
-<input type="radio" name="set 1" title="option 2">
-<input type="radio" name="set 1" title="option 3">
-<input type="radio" name="set 1" title="option 4">
-<div id="test">
-<h1>Set 2</h1>
-<input type="radio" name="set 2" title="option 1">
-<input type="radio" name="set 2" title="option 2">
-<input type="radio" name="set 2" title="option 3">
-<input type="radio" name="set 2" title="option 4 option 4option 4option 4option 4">
-</test>
-<script>$("*").zRadio();</script>
+<h1>Turn this...</h1>
+<input type="radio" name="set 1" title="Option 1">
+<input type="radio" name="set 1" title="Option 2">
+<input type="radio" name="set 1" title="Option 3">
+<input type="radio" name="set 1" title="Option 4 Lorem ipsum dolor sit amet.">
+<input type="radio" name="set 1" title="Option 4 Lorem ipsum dolor sit amet.">
+<input type="radio" name="set 1" title="Option 6 Lorem ipsum dolor sit amet.">
+<div id="affected">
+<h1>Into this</h1>
+<input type="radio" name="set 2" title="Option 1">
+<input type="radio" name="set 2" title="Option 2">
+<input type="radio" name="set 2" title="Option 3">
+<input type="radio" name="set 2" title="Option 4 Lorem ipsum dolor sit amet.">
+<input type="radio" name="set 2" title="Option 5 Lorem ipsum dolor sit amet.">
+<input type="radio" name="set 2" title="Option 6 Lorem ipsum dolor sit amet.">
+</div>
+<h1>With one function</h1>
+<pre>
+$("#affected").zRadio();
+</pre>
+<script>$("#affected").zRadio();</script>
 </body>

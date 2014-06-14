@@ -3,6 +3,9 @@ font-family:"Arial", sans-serif;
 }
 
 .zRadioWrapper{
+display:block;
+width: 702px;
+margin:auto;
 }
 
 .zRadio{
@@ -18,6 +21,7 @@ color: #336600;
 border: #336600 1px solid;
 border-radius:10px;
 font-size: 18px;
+overflow:hidden;
 }
 
 .zSelected{
