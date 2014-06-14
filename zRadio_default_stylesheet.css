@@ -1,0 +1,38 @@
+body{
+font-family:"Arial", sans-serif;
+}
+
+.zRadioWrapper{
+}
+
+.zRadio{
+display:inline-block;
+width: 200px;
+height:50px;
+background-color: white;
+margin:4px;
+padding: 12px;
+text-align:center;
+cursor:default;
+color: #336600;
+border: #336600 1px solid;
+border-radius:10px;
+font-size: 18px;
+}
+
+
+.zRadioInner{
+display:table;
+width: 100%;
+height: 100%;
+}
+
+.zRadioInnermost{
+display: table-cell;
+vertical-align:middle;
+}
+
+.zSelected{
+color: white;
+background-color:#336600;
+}
