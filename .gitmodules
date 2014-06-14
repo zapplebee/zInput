@@ -1,0 +1,3 @@
+[submodule "libs/jquery"]
+	path = libs/jquery
+	url = git://github.com/jquery/jquery.git
