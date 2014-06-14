@@ -6,6 +6,10 @@
 <script src="zRadio.js"></script>
 <style>
 
+body{
+font-family:"Arial", sans-serif;
+}
+
 .zRadioWrapper{
 
 
@@ -15,13 +19,15 @@
 display:inline-block;
 width: 200px;
 height:50px;
-background-color: red;
+background-color: white;
 margin:4px;
 padding: 12px;
 text-align:center;
-
+cursor:default;
+color: #336600;
+border: #336600 1px solid;
 border-radius:10px;
-
+font-size: 18px;
 }
 
 
@@ -36,21 +42,30 @@ height: 100%;
 display: table-cell;
 vertical-align:middle;
 }
+
+.zSelected{
+color: white;
+background-color:#336600;
+
+}
 </style>
 </head>
 <body>
+<h1>Set 1</h1>
 <input type="radio" name="set 1" title="option 1">
 <input type="radio" name="set 1" title="option 2">
 <input type="radio" name="set 1" title="option 3">
 <input type="radio" name="set 1" title="option 4">
+<div id="test">
+<h1>Set 2</h1>
 <input type="radio" name="set 2" title="option 1">
 <input type="radio" name="set 2" title="option 2">
 <input type="radio" name="set 2" title="option 3">
 <input type="radio" name="set 2" title="option 4 option 4option 4option 4option 4">
-
+</test>
 <script>
 
-zRadio();
+$("*").zRadio();
 
 </script>
 </body>
