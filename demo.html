@@ -9,14 +9,11 @@
 <script>
 $(function(){
 
-$(".styles").click(function(){
 
-$newStyle = $(this).attr("ss");
-$('#stylesheet').attr("href", $newStyle);
-
-
-
-})
+$("input[name='css_selector']").change(function(){
+	$newStyle = $(this).attr("value");
+	$('#stylesheet').attr("href", $newStyle);
+});
 
 
 });
@@ -28,8 +25,6 @@ $('#stylesheet').attr("href", $newStyle);
 <body>
 <h1>zInput</h1>
 <p>This jQuery plugin turns your plain checkboxes and radio buttons (with title attributes) into elements that are easily clickable.<BR><BR>Each input can be easily styled within the stylesheet and automatically vertically centers the title</p>
-<a class="styles" href="#" ss="css/zInput_default_stylesheet.css">See with original stylesheet</a><BR>
-<a class="styles" href="#" ss="css/zInput_alt_stylesheet_1.css">See with alt stylesheet 1</a>
 
 <h2>Turn this...</h2>
 <input type="radio" name="set 1" title="Option 1">
@@ -60,6 +55,9 @@ $('#stylesheet').attr("href", $newStyle);
 <p>Uniquely named checkboxes come with their own outer wrapper.</p>
 <input type="checkbox" name="checka" title="Check A">
 <input type="checkbox" name="checkb" title="Check B">
+<h2>Select from pre-made stylesheets</h2>
+<input type="radio" name="css_selector" value="css/zInput_default_stylesheet.css" title="Default">
+<input type="radio" name="css_selector" value="css/zInput_alt_stylesheet_1.css" title="Alt 1">
 </div>
 <h2>With one function</h2>
 <pre>
@@ -69,6 +67,7 @@ or apply the function to the whole document with
 <pre>
 $("*").zInput();
 </pre>
+
 <script>
 $(function() {
     FastClick.attach(document.body);

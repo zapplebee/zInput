@@ -34,7 +34,7 @@ $zRadio.click(function(){
 	//move up the DOM to the .zRadioWrapper and then select children. Remove .zSelected from all .zRadio
 	$theClickedButton.parent().children().removeClass("zSelected");
 	$theClickedButton.addClass("zSelected");
-	$theClickedButton.find(":radio").prop("checked", true);	
+	$theClickedButton.find(":radio").prop("checked", true).change();	
 	});
 
 $zCheckbox.click(function(){
@@ -42,7 +42,7 @@ $zCheckbox.click(function(){
 
 	//move up the DOM to the .zRadioWrapper and then select children. Remove .zSelected from all .zRadio
 	$theClickedButton.toggleClass("zSelected");
-	$theClickedButton.find(':checkbox').each(function () { this.checked = !this.checked; });
+	$theClickedButton.find(':checkbox').each(function () { this.checked = !this.checked; $(this).change()});
 	});	
 	
 }
