@@ -26,6 +26,7 @@ overflow:hidden;
 -ms-user-select: none;
 user-select: none;
 background-image:url('buttoncover_1.png');
+background-position:0px 120px;
 }
 
 
@@ -34,7 +35,7 @@ background-position:0px 40px;
 }
 
 .zSelected{
-background-position:0px 120px;
+background-position:0px 0px;
 }
 
 .zSelected.zCheckbox{
