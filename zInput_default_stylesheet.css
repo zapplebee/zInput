@@ -2,10 +2,10 @@ body{
 font-family:"Arial", sans-serif;
 }
 
-.zRadioWrapper{
+.zInputWrapper{
 background-color:#E4E8E8;
 padding: 4px;
-margin: 4px;
+margin: 2px;
 border-radius:12px;
 display:inline-block;
 }
