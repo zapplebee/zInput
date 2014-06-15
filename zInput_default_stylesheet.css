@@ -3,18 +3,10 @@ font-family:"Arial", sans-serif;
 }
 
 .zRadioWrapper{
-display:block;
-width: 702px;
-margin:auto;
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
+
 }
 
-.zRadio{
+.zInput{
 display:inline-block;
 width: 200px;
 height:50px;
@@ -28,9 +20,27 @@ border: #336600 1px solid;
 border-radius:10px;
 font-size: 18px;
 overflow:hidden;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+
+.zCheckbox{
+color: #000099;
+border: #000099 1px solid;
+margin: 4px 0px 4px 4px;
 }
 
 .zSelected{
 color: white;
 background-color:#336600;
+}
+
+.zSelected.zCheckbox{
+background-color: #000099;
+
 }
