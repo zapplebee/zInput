@@ -3,7 +3,10 @@ font-family:"Arial", sans-serif;
 }
 
 .zRadioWrapper{
-
+background-color:#aaa;
+padding: 4px;
+margin: 4px;
+display:inline-block;
 }
 
 .zInput{
@@ -32,7 +35,6 @@ user-select: none;
 .zCheckbox{
 color: #000099;
 border: #000099 1px solid;
-margin: 4px 0px 4px 4px;
 }
 
 .zSelected{
