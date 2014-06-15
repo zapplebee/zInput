@@ -4,6 +4,7 @@
 <title>zInput Demo</title>
 <link rel="stylesheet" type="text/css" href="zInput_default_stylesheet.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="extlibs/fastclick/lib/fastclick.js"></script>
 <script src="zInput.js"></script>
 </head>
 <body>
@@ -47,5 +48,11 @@ or apply the function to the whole document with
 <pre>
 $("*").zInput();
 </pre>
-<script>$("#affected").zInput();</script>
+<script>
+$(function() {
+    FastClick.attach(document.body);
+});
+
+$("#affected").zInput();
+</script>
 </body>

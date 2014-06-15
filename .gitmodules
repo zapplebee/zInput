@@ -1,0 +1,3 @@
+[submodule "extlibs/fastclick"]
+	path = extlibs/fastclick
+	url = git://github.com/ftlabs/fastclick.git
