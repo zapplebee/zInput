@@ -21,9 +21,10 @@ var $zRadio = $(".zRadio");
 	
 $zRadio.click(function(){
 	$theClickedButton = $(this);
-	$theClickedButton.find(":radio").prop("checked", true);
+
 	//move up the DOM to the .zRadioWrapper and then select children. Remove .zSelected from all .zRadio
 	$theClickedButton.parent().children().removeClass("zSelected");
-	$theClickedButton.addClass("zSelected");	
+	$theClickedButton.addClass("zSelected");
+	$theClickedButton.find(":radio").prop("checked", true);	
 	});
 }
