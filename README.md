@@ -23,7 +23,7 @@ Uniquely named checkboxes
 --------------
 Uniquely named checkboxes come with their own outer wrapper.
 
-![Checkboxes with default stylesheet](readme_images/checkbox_single.png)
+![Checkboxes with default stylesheet](readme_images/checkbox_singles.png)
 
 Implemented fastclick.js
 --------------
