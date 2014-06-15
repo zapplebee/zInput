@@ -1,53 +1,13 @@
-```html
-<link rel="stylesheet" type="text/css" href="zInput_default_stylesheet.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="extlibs/fastclick/lib/fastclick.js"></script>
-<script src="zInput.js"></script>
-<h1>zInput</h1>
-<p>This jQuery plugin turns your plain checkboxes and radio buttons (with title attributes) into easily elements that are easily clickable.<BR><BR>Each input can be easily styled within the stylesheet and automatically vertically centers the title</p>
-<h2>Turn this...</h2>
-<input type="radio" name="set 1" title="Option 1">
-<input type="radio" name="set 1" title="Option 2">
-<input type="radio" name="set 1" title="Option 3">
-<input type="radio" name="set 1" title="Option 4 Lorem ipsum dolor sit amet.">
-<input type="radio" name="set 1" title="Option 4 Lorem ipsum dolor sit amet.">
-<input type="radio" name="set 1" title="Option 6 Lorem ipsum dolor sit amet.">
-<input type="checkbox" name="check 1" title="Check 1 Lorem ipsum dolor sit amet.">
-<input type="checkbox" name="check 2" title="Check 2 Lorem ipsum dolor sit amet.">
-<input type="checkbox" name="check 3" title="Check 3 Lorem ipsum dolor sit amet.">
-<div id="affected">
-<h2>Into this</h2>
-<h3>Radio Inputs</h3>
-<p>Radio inputs toggle easily between classes. .zInput and .zSelected.</p>
-<input type="radio" name="set 2" title="Radio 1">
-<input type="radio" name="set 2" title="Radio 2">
-<input type="radio" name="set 2" title="Radio 3">
-<input type="radio" name="set 2" title="Radio 4">
-<input type="radio" name="set 2" title="Radio 5">
-<input type="radio" name="set 2" title="Radio 6 with a longer title to demo centering">
-<h3>Checkboxes with same name</h3>
-<p>Checkboxes with the same name (i.e. name="check[]") are included in the same outer wrapper for clear usability.</p>
-<input type="checkbox" name="check[]" title="Checkbox[] 1">
-<input type="checkbox" name="check[]" title="Checkbox[] 2">
-<input type="checkbox" name="check[]" title="Checkbox[] 3">
-<h3>Uniquely named checkboxes</h3>
-<p>Uniquely named checkboxes come with their own outer wrapper.</p>
-<input type="checkbox" name="checka" title="Check A">
-<input type="checkbox" name="checkb" title="Check B">
-</div>
-<h2>With one function</h2>
-<pre>
-$("#affected").zInput();
-</pre>
-or apply the function to the whole document with
-<pre>
-$("*").zInput();
-</pre>
-<script>
-$(function() {
-    FastClick.attach(document.body);
-});
+zInput
+======
 
-$("#affected").zInput();
-</script>
+A jquery plugin to transform standard HTML radio buttons and checkboxes (with title attributes) into easily clickable elements.
+
+![Buttons with default stylesheet](buttons.png)
+
+This is how the buttons look with the default stlyesheet.
+
+Do it with one simple function
+```
+$("*").zInput();
 ```
