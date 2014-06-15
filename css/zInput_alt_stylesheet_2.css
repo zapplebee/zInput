@@ -1,0 +1,46 @@
+body{
+font-family:"Arial", sans-serif;
+}
+
+.zInputWrapper{
+background-color:#cccccc;
+display:inline-block;
+padding: 4px 4px 4px 4px;
+}
+
+.zInput{
+border: #666666 4px solid;
+display:block;
+float:left;
+width: 158px;
+height:72px;
+margin:4px;
+padding: 4px 4px 4px 58px;
+text-align:center;
+cursor:default;
+color: white;
+font-size: 16px;
+overflow:hidden;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+background-image:url('buttoncover_2.png');
+background-position:0px 0px;
+border-radius: 16px;
+}
+
+
+.zCheckbox{
+background-position:0px 160px;
+}
+
+.zSelected{
+background-position:0px 240px;
+}
+
+.zSelected.zCheckbox{
+background-position:0px 80px;
+}
