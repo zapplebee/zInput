@@ -2,9 +2,9 @@
 <html>
 <head>
 <title>zRadio Demo</title>
-<link rel="stylesheet" type="text/css" href="zRadio_default_stylesheet.css">
+<link rel="stylesheet" type="text/css" href="zInput_default_stylesheet.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="zRadio.js"></script>
+<script src="zInput.js"></script>
 </head>
 <body>
 <h1>Turn this...</h1>
@@ -14,6 +14,9 @@
 <input type="radio" name="set 1" title="Option 4 Lorem ipsum dolor sit amet.">
 <input type="radio" name="set 1" title="Option 4 Lorem ipsum dolor sit amet.">
 <input type="radio" name="set 1" title="Option 6 Lorem ipsum dolor sit amet.">
+<input type="checkbox" name="check 1" title="Check 1 Lorem ipsum dolor sit amet.">
+<input type="checkbox" name="check 2" title="Check 2 Lorem ipsum dolor sit amet.">
+<input type="checkbox" name="check 3" title="Check 3 Lorem ipsum dolor sit amet.">
 <div id="affected">
 <h1>Into this</h1>
 <input type="radio" name="set 2" title="Option 1">
@@ -22,14 +25,17 @@
 <input type="radio" name="set 2" title="Option 4 Lorem ipsum dolor sit amet.">
 <input type="radio" name="set 2" title="Option 5 Lorem ipsum dolor sit amet.">
 <input type="radio" name="set 2" title="Option 6 Lorem ipsum dolor sit amet.">
+<input type="checkbox" name="check 4" title="Check 4 Lorem ipsum dolor sit amet.">
+<input type="checkbox" name="check 5" title="Check 5 Lorem ipsum dolor sit amet.">
+<input type="checkbox" name="check 6" title="Check 6 Lorem ipsum dolor sit amet.">
 </div>
 <h1>With one function</h1>
 <pre>
-$("#affected").zRadio();
+$("#affected").zInput();
 </pre>
 or apply the function to the whole document with
 <pre>
-$("*").zRadio();
+$("*").zInput();
 </pre>
-<script>$("#affected").zRadio();</script>
+<script>$("#affected").zInput();</script>
 </body>
