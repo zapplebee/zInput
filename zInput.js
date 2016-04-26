@@ -45,5 +45,15 @@ $zCheckbox.click(function(){
 	$theClickedButton.find(':checkbox').each(function () { this.checked = !this.checked; $(this).change()});
 	});	
 	
+  
+  $.each($inputs,function(k,v){
+    if($(v).attr('checked')){
+      
+      $(v).parent().click();
+      
+    }
+    
+  });
+  
 }
 
